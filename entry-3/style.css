@@ -19,3 +19,9 @@ main {
 .text:not(:first-child) {
     margin-top: 2em;
 }
+
+p.one {
+   background-color: bisque; 
+   color: #666666;
+   text-shadow: 1px 1px 0px #000000;
+}
