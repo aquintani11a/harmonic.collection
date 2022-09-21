@@ -1,6 +1,6 @@
 header {
     background-color: rgb(77, 124, 194);
-    padding: 2em;
+    padding: 1em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,10 +18,4 @@ main {
 
 .text:not(:first-child) {
     margin-top: 2em;
-}
-
-p.(:first-child) {
-   background-color: bisque; 
-   color: #666666;
-   text-shadow: 1px 1px 0px #000000;
 }
