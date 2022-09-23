@@ -19,3 +19,9 @@ main {
 .text:not(:first-child) {
     margin-top: 2em;
 }
+
+p {
+    color: red;
+    font-family: sans-serif;
+    
+}
