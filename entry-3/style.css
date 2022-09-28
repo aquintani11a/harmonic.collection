@@ -1,13 +1,13 @@
 header {
     background-color: rgb(77, 124, 194);
-    padding: 10px;
+    padding: 75px;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 main {
-    padding: 2em;
+    padding: 25px 50px;
 }
 .text {
     max-width: 70ch;
@@ -17,7 +17,7 @@ main {
 
 
 .text:not(:first-child) {
-    margin-top: 2em;
+    margin-top: 25px;
 }
 
 p {
