@@ -17,12 +17,16 @@ main {
 .text {
     max-width: 70ch;
     margin: 100px; 
-    
-}
-
-
-.text {
-    margin-top: 100px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }
 
 p {
