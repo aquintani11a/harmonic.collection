@@ -8,12 +8,13 @@ header {
     background: #1a1a1a;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
         }
-    
-
-
+        
+        
 main {
     padding:  100px;
 }
+
+
 .text {
     max-width: 70ch;
     margin: 100px; 
