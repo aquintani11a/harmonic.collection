@@ -4,15 +4,20 @@ header {
     position: fixed;
     top: 0;
     width: 50%;
+    color: rgba(255,255,255,.3);
+    background: #1a1a1a;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+        }
     
-}
+
 
 main {
-    padding:  50px;
+    padding:  10px;
 }
 .text {
     max-width: 70ch;
     margin: 100px; 
+    
 }
 
 
