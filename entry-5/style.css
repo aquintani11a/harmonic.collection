@@ -15,6 +15,11 @@
     }
 }
 
+.container {
+    width: 85%;
+    margin: auto;
+}
+
 body {
     font-size: var(--body-copy);
     font-family: 'Courier New', Courier, monospace;
