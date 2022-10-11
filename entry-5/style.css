@@ -1,0 +1,86 @@
+:root {
+    --page-spacing:24px;
+    --font-size: 16px;
+    --brand-color: black;
+    --sidebar-color: #eee;
+    --link-color: rgb(61, 61, 251);
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing:24px;
+        --font-size: 16px;
+        --flex-direction: f;
+
+    }
+}
+
+body {
+    font-size: var(--body-copy);
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    font-size: calc(var(--body-copy) * 4 )
+}
+
+h2 {
+    font-size: calc(var(--body-copy) * 2 )
+}
+
+p{ max-width: 80ch;}
+
+h2:not(:first-child),
+p:not(:first-child) {
+    margin-top: var(--page-spacing);
+}
+
+a {
+    color: var()
+}
+
+
+header,
+nav,
+article,
+aside,
+footer {
+    padding: var(--page-spacing);   
+}
+
+header,
+footer {
+    background-color: black;
+}
+
+nav,
+aside {
+    background-color: var(--sidebar-color);
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    header,
+    footer {
+        width: 100%;
+    }
+    
+    nav,
+    aside {
+        width: 33%;
+    }
+
+    footer {
+        width: 100;
+    }
+    
+
+}
+
