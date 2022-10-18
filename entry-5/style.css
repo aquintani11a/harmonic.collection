@@ -10,7 +10,7 @@
     :root {
         --page-spacing:24px;
         --font-size: 16px;
-        --flex-direction: f;
+       
         
 
     }
@@ -26,14 +26,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
     flex-direction: column;
     display: flex;
+    background-color: black;
+    color: azure;
 }
 
 h1 {
-    font-size: calc(var(--body-copy) * 4 )
+    font-size: calc(var(--body-copy) * 4 );
+    font-size: xx-large;
 }
 
 h2 {
-    font-size: calc(var(--body-copy) * 2 )
+    font-size: calc(var(--body-copy) * 2 );
+    font-size: xx-large;
 }
 
 p { max-width: 80ch;}
@@ -41,8 +45,21 @@ p { max-width: 80ch;}
 h2:not(:first-child),
 p:not(:first-child) {
     margin-top: var(--page-spacing);
+
 }
 
+h2:not(:first-child) {
+    font-size: xx-large;
+}
+
+@media (min-width: 1012px) {
+    :root {
+        --page-spacing:24px;
+        --font-size: 16px;
+       
+        
+
+    }
 a {
     color: var(--link-color)
 }
