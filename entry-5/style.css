@@ -11,6 +11,7 @@
         --page-spacing:24px;
         --font-size: 16px;
         --flex-direction: f;
+        
 
     }
 }
@@ -46,46 +47,20 @@ a {
     color: var(--link-color)
 }
 
-
-header,
-nav,
-article,
-aside,
-footer {
-    padding: var(--page-spacing);   
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
-header,
-footer {
-    background-color: rgb(143, 143, 223);
-}
-
-nav,
-aside {
-    background-color: var(--sidebar-color);
-}
-
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-
-    header,
-    footer {
-        width: 100%;
-    }
-    
-    nav,
-    aside {
-        width: 33%;
-    }
-
-    article {
-        width: 50%;
-    }
-    
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "nav    article aside"
+        "footer footer footer"
 
 }
+
 
