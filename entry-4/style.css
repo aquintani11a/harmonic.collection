@@ -1,40 +1,19 @@
-header {
-    background-color: rgb(77, 124, 194);
-    padding: 3px;
-    position: fixed;
-    top: 0;
-    width: 50%;
-    color: rgba(255,255,255,.3);
-    background: #1a1a1a;
-    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
-        }
-        
-        
-main {
-    padding:  100px;
+:root {
+    --page-spacing:24px;
+    --font-size: 16px;
+    --brand-color: black;
+    --sidebar-color: #eee;
+    --link-color: rgb(71, 69, 152);
 }
 
+@media (min-width: 1012px) {
+    :root {
+        --page-spacing:24px;
+        --font-size: 16px;
+       
+        
 
-.text {
-    max-width: 70ch;
-    margin: 100px; 
-    font-family: "Courier New", Courier, monospace;
-    font-size: 16px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #FFFFFF;
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-family: monospace; 
-    
-    
+    }
 }
 
 .container {
@@ -43,14 +22,59 @@ p {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    padding-top: 50px;
+    font-size: var(--body-copy);
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    display: flex;
+    background-color: black;
+    color: azure;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+h1 {
+    font-size: calc(var(--body-copy) * 4 );
+    font-size: xx-large;
+}
 
+h2 {
+    font-size: calc(var(--body-copy) * 2 );
+    font-size: xx-large;
+}
+
+p { max-width: 80ch;}
+
+h2:not(:first-child),
+p:not(:first-child) {
+    margin-top: var(--page-spacing);
+
+}
+
+h2:not(:first-child) {
+    font-size: xx-large;
+}
+
+@media (min-width: 1012px) {
+    :root {
+        --page-spacing:24px;
+        --font-size: 16px;
+       
+        
+
+    }
+a {
+    color: var(--link-color)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "nav    article aside"
+        "footer footer footer"
+    }
