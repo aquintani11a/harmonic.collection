@@ -52,7 +52,7 @@ h2:not(:first-child) {
     font-size: xx-large;
 }
 
-@media (min-width: 1012px) {
+@media (min-width: 1080px) {
     :root {
         --page-spacing:24px;
         --font-size: 16px;
@@ -77,5 +77,15 @@ body {
         "header header header"
         "nav    article aside"
         "footer footer footer"
+    }
+
+    @media (min-width: 1080px) {
+        :root {
+            --page-spacing:24px;
+            --font-size: 16px;
+           
+            
+    
+        }
     }
 
