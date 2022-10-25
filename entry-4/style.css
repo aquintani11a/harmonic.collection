@@ -23,7 +23,7 @@
 
 body {
     font-size: var(--body-copy);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     flex-direction: column;
     display: flex;
     background-color: black;
@@ -60,6 +60,8 @@ h2:not(:first-child) {
         
 
     }
+}
+
 a {
     color: var(--link-color)
 }
