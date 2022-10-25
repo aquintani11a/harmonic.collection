@@ -3,7 +3,7 @@
     --font-size: 16px;
     --brand-color: black;
     --sidebar-color: #eee;
-    --link-color: rgb(71, 69, 152);
+    --link-color: rgb(2, 0, 149);
 }
 
 
@@ -31,6 +31,7 @@ h2 {
     font-size: calc(var(--body-copy) * 2 );
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 p { max-width: 80ch;}
