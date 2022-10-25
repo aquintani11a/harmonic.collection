@@ -6,15 +6,6 @@
     --link-color: rgb(71, 69, 152);
 }
 
-@media (min-width: 1012px) {
-    :root {
-        --page-spacing:24px;
-        --font-size: 16px;
-       
-        
-
-    }
-}
 
 .container {
     width: 85%;
@@ -33,11 +24,13 @@ body {
 h1 {
     font-size: calc(var(--body-copy) * 4 );
     font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
     font-size: calc(var(--body-copy) * 2 );
     font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p { max-width: 80ch;}
@@ -52,15 +45,7 @@ h2:not(:first-child) {
     font-size: xx-large;
 }
 
-@media (min-width: 1012px) {
-    :root {
-        --page-spacing:24px;
-        --font-size: 16px;
-       
-        
 
-    }
-}
 
 a {
     color: var(--link-color)
